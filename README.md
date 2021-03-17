@@ -2,7 +2,7 @@
 This repository contains the list of repositories used for OSD32MP1 Debian SDK
 
 ## Introduction
-OSD32MP1 Debian SDK can be used to develop Debian Linux images for OSD32MP1 based platforms. The SDK runs on host desktop preferably runnning Ubuntu. Docker is used to containerize the build environment. Souce code from ST (OpenSTLinux) is used, for TF-A, U-Boot, Linux kernel, GCNano and STM32CubeMP1. So, the SDK is compatible with software from ST. Binary images for both SD card or eMMC can be generated. Cube Programmer can be used to flash the eMMC via USB.
+OSD32MP1 Debian SDK can be used to develop Debian Linux images for OSD32MP1 based platforms. The SDK runs on host desktop preferably runnning Ubuntu. Docker is used to containerize the build environment. Souce code from ST (OpenSTLinux) is used, for TF-A, U-Boot, Linux kernel, GCNano and STM32CubeMP1. So, the SDK is compatible with software from ST. Binary images for both SD card and eMMC can be generated. Cube Programmer can be used to flash the eMMC via USB.
 
 The following repositories make up OSD32MP1 Debian SDK::
 
