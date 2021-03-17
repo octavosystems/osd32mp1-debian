@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+	<remote  name="STMicrolectronics" fetch="https://github.com/STMicroelectronics/" />
+	<remote  name="octavo" fetch="https://github.com/octavosystems/" />
+	<default revision="master" sync-j="8"/>
+
+	<project path="kernel/linux-4.19.94" name="linux.git" remote="STMicrolectronics" revision="refs/tags/v4.19-stm32mp-r3" />
+	<project path="bootloader/arm-trusted-firmware-2.0/" name="arm-trusted-firmware.git" remote="STMicrolectronics" revision="refs/tags/v2.0-stm32mp-r1.5" />
+	<project path="bootloader/u-boot-2018.11" name="u-boot.git" remote="STMicrolectronics" revision="refs/tags/v2018.11-stm32mp-r3"/>
+	<project path="multistrap/" name="osd32mp1-multistrap-buster.git" remote="octavo" revision="master"/>
+	<project path="docker/" name="osd32mp1-debian-docker.git" remote="octavo" revision="master"/>
+	<project path="build-tools/" name="osd32mp1-build-tools.git" remote="octavo">
+		<linkfile src="Makefile" dest="Makefile" />
+	</project>
+
+	<project path="gcnano-6.2.4.p4-binaries" name="gcnano-binaries.git" remote="STMicrolectronics" revision="gcnano-6.2.4_p4-binaries"/>
+	<project path="STM32CubeMP1" name="STM32CubeMP1.git" remote="STMicrolectronics" revision="c604fa0965c73e430eebd5fa780180beb9a71b44"/>
+</manifest>
+
