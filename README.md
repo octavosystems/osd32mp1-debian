@@ -36,7 +36,6 @@ The following packges are recommended:
 | qemu-user-static | v5.4-stm32mp |
 | STM32MP1 Cube Programmer | 2.5 or higher|
 
-Please see https://wiki.st.com/stm32mpu/wiki/STM32CubeProgrammer for Cube Programmer installation instructions.
 
 ## OSD32MP1 Target binary versions:
 
@@ -59,6 +58,7 @@ The following version of the image are supported in release:
 5. ```sudo systemctl start docker```
 
 Install Cube Programmer from here: https://www.st.com/en/development-tools/stm32cubeprog.html
+Please see https://wiki.st.com/stm32mpu/wiki/STM32CubeProgrammer for Cube Programmer installation instructions and setup.
 
 ### Get SDK source code
 1. ```mkdir ~/osd32mp1-workspace```
