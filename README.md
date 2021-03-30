@@ -29,12 +29,14 @@ The following packges are recommended:
 
 | Package | Version |
 | ------- | ------- |
-| repo | v2.13 |
-| git | 2.17 |
+| repo | v2.13 or higher|
+| git | 2.17 or higher|
 | Python | 3.x |
 | Docker | 19.x |
 | qemu-user-static | v5.4-stm32mp |
-| STM32MP1 Cube Programmer | 2.5 |
+| STM32MP1 Cube Programmer | 2.5 or higher|
+
+Please see https://wiki.st.com/stm32mpu/wiki/STM32CubeProgrammer for Cube Programmer installation instructions.
 
 ## OSD32MP1 Target binary versions:
 
