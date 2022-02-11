@@ -53,7 +53,7 @@ The following version of the image are supported in release:
 ### Setup Host computer
 1. ```sudo apt-get update```
 2. ```sudo apt-get upgrade```
-3. ```sudo apt-get install git docker.io repo qemu-user-static```
+3. ```sudo apt-get install git docker.io qemu-user-static```
 4. ```sudo systemctl enable docker```
 5. ```sudo systemctl start docker```
 6. Install repo: https://stackoverflow.com/questions/4350344/how-to-install-androids-repo-on-my-ubuntu-system
