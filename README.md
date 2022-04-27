@@ -68,6 +68,7 @@ Please see https://wiki.st.com/stm32mpu/wiki/STM32CubeProgrammer for Cube Progra
 4. ```repo sync```
 
 NOTE: If you encounter the following error: "repo init -u https://github.com/octavosystems/osd32mp1-debian failed by responsing fatal: Couldn't find remote ref refs/heads/master", you will need to use the following command for #3:
+
 ```repo init -u https://github.com/octavosystems/osd32mp1-debian -b main```
 
 ### Compile docker image
