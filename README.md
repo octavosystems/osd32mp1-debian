@@ -75,7 +75,7 @@ NOTE: If you encounter the following error: "repo init -u https://github.com/oct
 1. ```cd ~/osd32mp1-workspace/docker```
 2. ```sudo make build```
 
-### Compile target image for OSD32MP1-RED
+### Compile target image for OSD32MP1-RED V1_2
 1. ```cd ~/osd32mp1-workspace/docker```
 2. ```sudo make run```
 3. ```make all```
@@ -85,21 +85,21 @@ The following outputs are generated in ~/osd32mp1-workspace/deploy :
 
 | Output | Filename | Comment |
 | ------ | -------- | ------- |
-| 1 | tf-a-stm32mp157c-osd32mp1-red-emmc.stm32 | Binary for OSD32M1 arm-trusted-firmware eMMC |
-| 2 | tf-a-stm32mp157c-osd32mp1-red-sdcard.stm32 | Binary for OSD32MP1 arm-trsuted-firmware SD card |
-| 3 | tf-a-stm32mp157c-osd32mp1-red-usb.stm32 | Binary for OSD32MP1 arm-trsuted-firmware SD card USB boot |
-| 4 | fip-stm32mp157c-osd32mp1-red-trusted.bin | FiP Binary for OSD32MP1 U-Boot |
-| 4 | FlashLayout_sdcard_stm32mp157c-osd32mp1-red-trusted.tsv | Flash layout file for OSD32MP1-RED trusted - SD card |
-| 5 | FlashLayout_sdcard_stm32mp157c-osd32mp1-red-trusted.raw | Binary image for OSD32MP1-RED trusted - SD card |
-| 6 | FlashLayout_emmc_stm32mp157c-osd32mp1-red-trusted.tsv | Flash layout file for OSD32MP1-RED trsudted - eMMC |
-| 7 | octavo-bootfs-debian-lxqt-stm32mp157c-osd32mp1-red.ext4 | BOOTFS binary for OSD32MP1-RED |
-| 8 | octavo-rootfs-debian-lxqt-emmc-stm32mp157c-osd32mp1-red.ext4 | ROOTFS binary for OSD32MP1-RED - eMMC |
-| 9 | octavo-rootfs-debian-lxqt-sdcard-stm32mp157c-osd32mp1-red.ext4 | ROOTFS binary for OSD32MP1-RED - SD card |
-| 10 | octavo-vendorfs-debian-lxqt-stm32mp157c-osd32mp1-red.ext4 | VENDORFS binary for OSD32MP1-RED |
+| 1 | tf-a-stm32mp157c-osd32mp1-red-v1_2-emmc.stm32 | Binary for OSD32M1 arm-trusted-firmware eMMC |
+| 2 | tf-a-stm32mp157c-osd32mp1-red-v1_2-sdcard.stm32 | Binary for OSD32MP1 arm-trsuted-firmware SD card |
+| 3 | tf-a-stm32mp157c-osd32mp1-red-v1_2-usb.stm32 | Binary for OSD32MP1 arm-trsuted-firmware SD card USB boot |
+| 4 | fip-stm32mp157c-osd32mp1-red-v1_2-trusted.bin | FiP Binary for OSD32MP1 U-Boot |
+| 4 | FlashLayout_sdcard_stm32mp157c-osd32mp1-red-v1_2-trusted.tsv | Flash layout file for OSD32MP1-RED trusted - SD card |
+| 5 | FlashLayout_sdcard_stm32mp157c-osd32mp1-red-v1_2-trusted.raw | Binary image for OSD32MP1-RED trusted - SD card |
+| 6 | FlashLayout_emmc_stm32mp157c-osd32mp1-red-v1_2-trusted.tsv | Flash layout file for OSD32MP1-RED trsudted - eMMC |
+| 7 | octavo-bootfs-debian-lxqt-stm32mp157c-osd32mp1-red-v1_2.ext4 | BOOTFS binary for OSD32MP1-RED |
+| 8 | octavo-rootfs-debian-lxqt-emmc-stm32mp157c-osd32mp1-red-v1_2.ext4 | ROOTFS binary for OSD32MP1-RED - eMMC |
+| 9 | octavo-rootfs-debian-lxqt-sdcard-stm32mp157c-osd32mp1-red-v1_2.ext4 | ROOTFS binary for OSD32MP1-RED - SD card |
+| 10 | octavo-vendorfs-debian-lxqt-stm32mp157c-osd32mp1-red-v1_2.ext4 | VENDORFS binary for OSD32MP1-RED |
 
 ### Deploy on SD card (where sdX is the device assignment for SD card)
 1. ```cd ~/osd32mp1-workspace/deploy/```
-2. ```sudo dd if=FlashLayout_sdcard_stm32mp157c-osd32mp1-red-trusted.raw of=/dev/sdX bs=1M conv=fdatasync status=progress```
+2. ```sudo dd if=FlashLayout_sdcard_stm32mp157c-osd32mp1-red-v1_2-trusted.raw of=/dev/sdX bs=1M conv=fdatasync status=progress```
 
 ### Flash eMMC
 STM32MP1 Cube Programmer is required for this procedure
@@ -131,7 +131,7 @@ The above device indicates the board is connected as USB1.
 
 Flash the eMMC
 
-4. ```STM32_Programmer_CLI -c port=USB1 -w FlashLayout_emmc_stm32mp157c-osd32mp1-red-trusted.tsv```
+4. ```STM32_Programmer_CLI -c port=USB1 -w FlashLayout_emmc_stm32mp157c-osd32mp1-red-v1_2-trusted.tsv```
 
 
 ## How to contribute
